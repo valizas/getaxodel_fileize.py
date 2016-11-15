@@ -73,6 +73,7 @@ for x in f.readlines():
        jt == ProcedureLayoutBlockTextSource:
         xstrip=x.strip()
         if xstrip == ':eSource':
+            gx_object_contents.append(x)
             stack.pop()
             levelDown=True
             jt='/'.join(stack)
